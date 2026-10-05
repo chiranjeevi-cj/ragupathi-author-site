@@ -100,6 +100,8 @@
       "praise.3.r": "Headmaster (Retd.), Cheyyar, Greetings, Naanum Pesuven",
 
       "footer.quote": "“Education and good conduct alone make a person good.” — Aristotle",
+      "footer.contact": "Contact the author",
+      "footer.whatsapp": "Message on WhatsApp",
       "footer.rights": "All rights reserved."
     },
 
@@ -196,6 +198,8 @@
       "praise.3.r": "தலைமையாசிரியர் (ஓய்வு), செய்யாறு, வாழ்த்துரை, நானும் பேசுவேன்",
 
       "footer.quote": "“கல்வியும் நன்னடத்தையுமே ஒரு மனிதனை நல்லவனாக்குகின்றன.” — அரிஸ்டாட்டில்",
+      "footer.contact": "ஆசிரியரைத் தொடர்பு கொள்ள",
+      "footer.whatsapp": "வாட்ஸ்அப்பில் செய்தி அனுப்ப",
       "footer.rights": "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை."
     }
   };

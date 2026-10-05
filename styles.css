@@ -683,3 +683,7 @@ html[data-lang="ta"] .t-year { font-size: 18px; }
   .reader.zoomed .reader-stage { place-items: start; }
   .reader.zoomed .spread { width: 200%; max-width: none; }
 }
+
+.footer-contact { margin-bottom: 40px; display: flex; flex-direction: column; align-items: center; }
+.footer-contact .eyebrow { justify-content: center; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
