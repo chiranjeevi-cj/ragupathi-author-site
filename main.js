@@ -210,7 +210,7 @@
       "journey.4.d": "மூன்றாம் நூல்: கல்லூரிக்குச் செல்லும் கிராமப்புற மாணவர்களுக்கான அன்பான வழிகாட்டி.",
 
       "praise.eyebrow": "வாழ்த்துகள்",
-      "praise.title": "அணிந்துரைகளிலிருந்து",
+      "praise.title": "அணிந்துரைகளில் இருந்து",
       "praise.1.q": "ஒவ்வொரு பக்கத்திலும் உள்ள கவிதைகள் வானத்து நட்சத்திரமாய் மிளிர்கின்றன. சமூகம் சார்ந்து இயங்கும் மனிதரால் ஒரு சராசரியானவரைப் போல இயங்க முடியாது என்பதற்குக் கண்முன் சாட்சியாகக் கவிஞர் கா. ரகுபதியும் அவரது கவிதைகளும் விளங்குகின்றன.",
       "praise.1.n": "ஜெ. மதிவேந்தன்",
       "praise.1.r": "அணிந்துரை, உயிர் பெறும் பூக்கள்",
@@ -397,21 +397,28 @@
     });
   }
 
-  // Shrink the hero name if a single long word (e.g. வடதின்னலூர்) would overflow a narrow screen.
-  function fitHeroTitle() {
-    const h1 = $(".hero-title");
-    if (!h1) return;
-    h1.style.fontSize = "";
-    const avail = h1.clientWidth;
-    let widest = 0;
-    $$(".split", h1).forEach(el => { widest = Math.max(widest, el.getBoundingClientRect().width); });
-    if (widest > avail && avail > 0) {
-      const base = parseFloat(getComputedStyle(h1).fontSize);
-      h1.style.fontSize = `${Math.floor(base * (avail / widest) * 0.97)}px`;
-    }
+  // Long single words (common in Tamil, e.g. அணிந்துரைகளிலிருந்து) can't wrap, so shrink any
+  // heading that would spill past its column on a narrow screen.
+  const FIT_SEL = ".hero-title, .section-title, .articles-title, .book-info h3, .article-body h4, .shelf-item h3, .theme-card h3, .timeline h3, .video-meta h3, .quote p, .footer-quote, .about-badge span";
+  function fitText() {
+    $$(FIT_SEL).forEach(el => {
+      el.style.fontSize = "";
+      el.style.overflowWrap = "normal"; // measure without the CSS break-word fallback
+      const avail = el.clientWidth;
+      let need = el.scrollWidth;
+      $$(".split", el).forEach(sp => { need = Math.max(need, sp.getBoundingClientRect().width); });
+      el.style.overflowWrap = "";
+      if (!avail) return;
+      if (need > avail + 1) {
+        const base = parseFloat(getComputedStyle(el).fontSize);
+        el.style.fontSize = `${Math.max(12, Math.floor(base * (avail / need) * 0.97))}px`;
+      }
+    });
   }
-  addEventListener("resize", fitHeroTitle);
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitHeroTitle);
+  let fitRaf = 0;
+  const scheduleFit = () => { cancelAnimationFrame(fitRaf); fitRaf = requestAnimationFrame(fitText); };
+  addEventListener("resize", scheduleFit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(scheduleFit);
 
   function applyLang() {
     const dict = t[lang];
@@ -422,13 +429,13 @@
       if (v != null) el.textContent = v;
     });
     $$(".split").forEach(splitChars);
-    fitHeroTitle();
     $$("[data-set-lang]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.setLang === lang)));
     positionPill();
     renderBooks();
     renderShelf();
     renderVideos();
     renderQuotes();
+    scheduleFit();
     if (reader.classList.contains("open")) updateReaderUI();
     observeReveals();
   }
