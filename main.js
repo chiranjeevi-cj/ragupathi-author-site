@@ -13,12 +13,20 @@
       "nav.books": "Books",
       "nav.words": "Words",
       "nav.journey": "Journey",
-      "nav.contact": "Contact",
+      "nav.library": "Read",
+      "library.eyebrow": "The reading room",
+      "library.title": "Read the books, right here",
+      "library.sub": "Every page of all three books, free to read online. Open a book, turn the pages, and come back any time: your place is remembered.",
+      "read.now": "Read now",
+      "read.continue": "Continue reading",
+      "read.pages": "pages",
+      "read.page": "Page",
+      "read.of": "of",
       "hero.eyebrow": "Poet · Writer · Teacher",
       "hero.name1": "Vadathinnalur",
       "hero.name2": "K. Ragupathi",
       "hero.lead": "A government school teacher who writes for the students he believes in: modern Tamil poetry, life lessons and guidance that turn darkness into light.",
-      "hero.cta1": "Explore the books",
+      "hero.cta1": "Read the books",
       "hero.cta2": "Meet the author",
 
       "about.eyebrow": "About the author",
@@ -53,7 +61,7 @@
 
       "books.eyebrow": "The books",
       "books.title": "Three books, one purpose",
-      "books.sub": "Each book is written in Tamil. Tap a cover to see the details.",
+      "books.sub": "All three books are in Tamil, and every one can be read in full on this site.",
       "books.more": "Book details",
       "books.book": "Book",
 
@@ -91,19 +99,6 @@
       "praise.3.n": "Ku. Anbarasu",
       "praise.3.r": "Headmaster (Retd.), Cheyyar, Greetings, Naanum Pesuven",
 
-      "contact.eyebrow": "Get the books",
-      "contact.title": "Order a copy or invite the author",
-      "contact.p": "The books are available from their publishers. For copies, school talks or reader events, reach out to the publishers below.",
-      "pub.kavi.n": "Kavithedal Pathippagam",
-      "pub.kavi.a": "2/517, Santhanurmedu, Thippirettiyalli Post, Dharmapuri 635301",
-      "pub.kavi.b": "Uyir Perum Pookkal",
-      "pub.surabi.n": "Thamizhsurabi Pathippagam",
-      "pub.surabi.a": "51/24, Easwaradas Street, Triplicane, Chennai 600005",
-      "pub.surabi.b": "Iruttalla… Velichcham",
-      "pub.nellai.n": "Nellai Pathippagam",
-      "pub.nellai.a": "Triplicane, Chennai 600005",
-      "pub.nellai.b": "Naanum Pesuven",
-
       "footer.quote": "“Education and good conduct alone make a person good.” — Aristotle",
       "footer.rights": "All rights reserved."
     },
@@ -114,12 +109,20 @@
       "nav.books": "நூல்கள்",
       "nav.words": "வரிகள்",
       "nav.journey": "பயணம்",
-      "nav.contact": "தொடர்பு",
+      "nav.library": "வாசிக்க",
+      "library.eyebrow": "வாசிப்பு அறை",
+      "library.title": "நூல்களை இங்கேயே வாசியுங்கள்",
+      "library.sub": "மூன்று நூல்களின் அனைத்துப் பக்கங்களையும் இலவசமாக இணையத்தில் வாசிக்கலாம். நூலைத் திறந்து பக்கங்களைப் புரட்டுங்கள்; நீங்கள் விட்ட இடம் நினைவில் இருக்கும்.",
+      "read.now": "இப்போது வாசிக்க",
+      "read.continue": "தொடர்ந்து வாசிக்க",
+      "read.pages": "பக்கங்கள்",
+      "read.page": "பக்கம்",
+      "read.of": "/",
       "hero.eyebrow": "கவிஞர் · எழுத்தாளர் · ஆசிரியர்",
       "hero.name1": "வடதின்னலூர்",
       "hero.name2": "கா. ரகுபதி",
       "hero.lead": "தான் நம்பும் மாணவர்களுக்காக எழுதும் அரசுப் பள்ளி ஆசிரியர். புதுக்கவிதைகள், வாழ்வியல் கருத்துக்கள், இருளை வெளிச்சமாக்கும் வழிகாட்டல்கள்.",
-      "hero.cta1": "நூல்களைக் காண்க",
+      "hero.cta1": "நூல்களை வாசிக்க",
       "hero.cta2": "ஆசிரியரை அறிக",
 
       "about.eyebrow": "ஆசிரியர் அறிமுகம்",
@@ -154,7 +157,7 @@
 
       "books.eyebrow": "நூல்கள்",
       "books.title": "மூன்று நூல்கள், ஒரே நோக்கம்",
-      "books.sub": "அனைத்தும் தமிழ் நூல்கள். விவரங்களுக்கு அட்டையைத் தொடவும்.",
+      "books.sub": "மூன்றும் தமிழ் நூல்கள்; ஒவ்வொன்றையும் இந்தத் தளத்திலேயே முழுமையாக வாசிக்கலாம்.",
       "books.more": "நூல் விவரம்",
       "books.book": "நூல்",
 
@@ -192,19 +195,6 @@
       "praise.3.n": "கு. அன்பரசு",
       "praise.3.r": "தலைமையாசிரியர் (ஓய்வு), செய்யாறு, வாழ்த்துரை, நானும் பேசுவேன்",
 
-      "contact.eyebrow": "நூல்களைப் பெற",
-      "contact.title": "நூல் வாங்க அல்லது ஆசிரியரை அழைக்க",
-      "contact.p": "நூல்கள் அவற்றின் பதிப்பகங்களில் கிடைக்கின்றன. நூல் பிரதிகள், பள்ளி உரைகள், வாசகர் சந்திப்புகளுக்குக் கீழ்க்காணும் பதிப்பகங்களைத் தொடர்பு கொள்ளவும்.",
-      "pub.kavi.n": "கவித்தேடல் பதிப்பகம்",
-      "pub.kavi.a": "2/517, சந்தனூர்மேடு, திப்பிரெட்டிஅள்ளி அஞ்சல், தருமபுரி 635301",
-      "pub.kavi.b": "உயிர் பெறும் பூக்கள்",
-      "pub.surabi.n": "தமிழ்ச்சுரபி பதிப்பகம்",
-      "pub.surabi.a": "51/24, ஈஸ்வரதாஸ் தெரு, திருவல்லிக்கேணி, சென்னை 600005",
-      "pub.surabi.b": "இருட்டல்ல… வெளிச்சம்",
-      "pub.nellai.n": "நெல்லை பதிப்பகம்",
-      "pub.nellai.a": "திருவல்லிக்கேணி, சென்னை 600005",
-      "pub.nellai.b": "நானும் பேசுவேன்",
-
       "footer.quote": "“கல்வியும் நன்னடத்தையுமே ஒரு மனிதனை நல்லவனாக்குகின்றன.” — அரிஸ்டாட்டில்",
       "footer.rights": "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை."
     }
@@ -213,6 +203,7 @@
   const books = [
     {
       id: "naanum",
+      scans: 64,
       title: "நானும் பேசுவேன்",
       translit: "Naanum Pesuven",
       cover: "assets/img/cover-naanum.jpg",
@@ -240,6 +231,7 @@
     },
     {
       id: "uyir",
+      scans: 68,
       title: "உயிர் பெறும் பூக்கள்",
       translit: "Uyir Perum Pookkal",
       cover: "assets/img/cover-uyir.jpg",
@@ -266,6 +258,7 @@
     },
     {
       id: "irutalla",
+      scans: 22,
       title: "இருட்டல்ல… வெளிச்சம்",
       translit: "Iruttalla… Velichcham",
       cover: "assets/img/cover-irutalla.jpg",
@@ -367,7 +360,9 @@
     $$("[data-set-lang]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.setLang === lang)));
     positionPill();
     renderBooks();
+    renderShelf();
     renderQuotes();
+    if (reader.classList.contains("open")) updateReaderUI();
     observeReveals();
   }
 
@@ -418,12 +413,16 @@
           <div class="book-tags reveal">${L.tags.map((tg, k) => `<span class="tag${k === 0 ? " hl" : ""}">${tg}</span>`).join("")}</div>
           <p class="reveal">${L.desc}</p>
           ${b.excerpt ? `<div class="book-excerpt reveal">${b.excerpt}</div>` : ""}
-          <button class="link-btn reveal" type="button"><span class="arr">→</span>${d["books.more"]}</button>
+          <div class="book-actions reveal">
+            <button class="btn btn-dark read-btn" type="button">${d["read.now"]}</button>
+            <button class="link-btn" type="button"><span class="arr">→</span>${d["books.more"]}</button>
+          </div>
         </div>`;
       const open = () => openModal(b);
       $(".book-3d", art).addEventListener("click", open);
       $(".book-3d", art).addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
       $(".link-btn", art).addEventListener("click", open);
+      $(".read-btn", art).addEventListener("click", () => openReader(b.id));
       bookTilt($(".book-3d", art));
       list.appendChild(art);
     });
@@ -445,7 +444,9 @@
    * ---------------------------------------------------------------- */
   const modal = $("#bookModal");
   let lastFocus = null;
+  let modalBook = null;
   function openModal(b) {
+    modalBook = b;
     const L = b[lang];
     const d = t[lang];
     lastFocus = document.activeElement;
@@ -473,7 +474,236 @@
     if (lastFocus) lastFocus.focus();
   }
   $$("[data-close]", modal).forEach(el => el.addEventListener("click", closeModal));
-  document.addEventListener("keydown", e => { if (e.key === "Escape" && modal.classList.contains("open")) closeModal(); });
+  $("#modalRead").addEventListener("click", () => { const b = modalBook; closeModal(); if (b) openReader(b.id); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && modal.classList.contains("open") && !reader.classList.contains("open")) closeModal(); });
+
+  /* ------------------------------------------------------------------
+   * Library shelf + in-browser book reader
+   * ---------------------------------------------------------------- */
+  const reader = $("#reader");
+  const stage = $("#readerStage");
+  const spreadEl = $("#spread");
+  const slotL = $("#slotL");
+  const slotR = $("#slotR");
+  const range = $("#readerRange");
+  const pageSrc = (id, i) => `assets/books/${id}/${String(i + 1).padStart(2, "0")}.webp`;
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch (_) { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch (_) { /* ignore */ } }
+  };
+
+  function renderShelf() {
+    const shelf = $("#shelf");
+    const d = t[lang];
+    shelf.innerHTML = books.map(b => {
+      const saved = +store.get(`page:${b.id}`) || 0;
+      const pct = Math.round((saved / (b.scans - 1)) * 100);
+      return `
+        <article class="shelf-item reveal" data-id="${b.id}" style="--glow:${b.glow}">
+          <button class="shelf-cover" type="button" aria-label="${d["read.now"]}: ${b.title}">
+            <img src="${b.cover}" alt="" loading="lazy" />
+            <span class="shelf-open">${saved ? d["read.continue"] : d["read.now"]}</span>
+          </button>
+          <h3>${b.title}</h3>
+          <p>${b[lang].genre} · ${b.scans} ${d["read.pages"]}</p>
+          ${saved ? `<div class="shelf-progress" aria-hidden="true"><span style="width:${pct}%"></span></div>` : ""}
+        </article>`;
+    }).join("");
+    $$(".shelf-cover", shelf).forEach(btn =>
+      btn.addEventListener("click", () => openReader(btn.closest(".shelf-item").dataset.id)));
+  }
+
+  const R = { book: null, page: 0, busy: false, zoom: false, lastFocus: null };
+  const isSpread = () => innerWidth >= 900 && !R.zoom;
+
+  // In spread mode the cover sits alone on the right; after that pages pair up (1|2, 3|4, ...).
+  const spreadOf = p => (p === 0 ? [null, 0] : p % 2 ? [p, p + 1] : [p - 1, p]);
+
+  function setImg(slot, idx) {
+    const img = $("img", slot);
+    if (idx == null || idx >= R.book.scans) {
+      slot.classList.add("blank");
+      img.removeAttribute("src");
+      return;
+    }
+    slot.classList.remove("blank");
+    img.src = pageSrc(R.book.id, idx);
+    img.alt = `${R.book.title}, ${t[lang]["read.page"]} ${idx + 1}`;
+  }
+
+  function preload(p) {
+    [p - 2, p - 1, p + 1, p + 2, p + 3].forEach(i => {
+      if (i >= 0 && i < R.book.scans) { const im = new Image(); im.src = pageSrc(R.book.id, i); }
+    });
+  }
+
+  function paint() {
+    const two = isSpread();
+    spreadEl.classList.toggle("two", two);
+    if (two) {
+      const [l, r] = spreadOf(R.page);
+      setImg(slotL, l);
+      setImg(slotR, r);
+    } else {
+      setImg(slotR, R.page);
+    }
+    updateReaderUI();
+    preload(R.page);
+  }
+
+  function updateReaderUI() {
+    if (!R.book) return;
+    const d = t[lang];
+    $("#readerTitle").textContent = R.book.title;
+    let label = R.page + 1;
+    if (isSpread()) {
+      const [l, r] = spreadOf(R.page);
+      if (l != null && r < R.book.scans) label = `${l + 1}–${r + 1}`;
+    }
+    $("#readerCount").textContent = `${d["read.page"]} ${label} ${d["read.of"]} ${R.book.scans}`;
+    range.max = R.book.scans - 1;
+    range.value = R.page;
+    $("#readerPrev").disabled = R.page === 0;
+    $("#readerNext").disabled = isSpread() ? spreadOf(R.page)[1] >= R.book.scans - 1 : R.page >= R.book.scans - 1;
+  }
+
+  function go(target, animate = true) {
+    if (!R.book || R.busy) return;
+    target = Math.max(0, Math.min(R.book.scans - 1, target));
+    if (target === R.page) return;
+    const forward = target > R.page;
+    const two = isSpread();
+    if (two && spreadOf(target)[1] === spreadOf(R.page)[1]) return;
+    const done = () => {
+      R.page = target;
+      store.set(`page:${R.book.id}`, String(target));
+      paint();
+      R.busy = false;
+      history.replaceState(null, "", `#read/${R.book.id}/${target + 1}`);
+    };
+    if (!animate || reduceMotion) return done();
+    R.busy = true;
+    if (two) flipSpread(target, forward, done);
+    else turnSingle(target, forward, done);
+  }
+
+  // Desktop: a leaf rotates around the spine, showing the old page on its front and the new one on its back.
+  function flipSpread(target, forward, done) {
+    const [oldL, oldR] = spreadOf(R.page);
+    const [newL, newR] = spreadOf(target);
+    const leaf = document.createElement("div");
+    leaf.className = `leaf ${forward ? "fwd" : "back"}`;
+    const face = (cls, idx) => `<div class="face ${cls}${idx == null || idx >= R.book.scans ? " blank" : ""}">${idx == null || idx >= R.book.scans ? "" : `<img src="${pageSrc(R.book.id, idx)}" alt="" />`}</div>`;
+    leaf.innerHTML = forward ? face("front", oldR) + face("rear", newL) : face("front", oldL) + face("rear", newR);
+    // Reveal what lies under the turning leaf straight away.
+    if (forward) setImg(slotR, newR); else setImg(slotL, newL);
+    spreadEl.appendChild(leaf);
+    requestAnimationFrame(() => requestAnimationFrame(() => leaf.classList.add("turn")));
+    leaf.addEventListener("transitionend", () => { leaf.remove(); done(); }, { once: true });
+  }
+
+  // Phones: the page swings away and the next one settles in.
+  function turnSingle(target, forward, done) {
+    slotR.classList.remove("in-fwd", "in-back");
+    slotR.classList.add(forward ? "out-fwd" : "out-back");
+    setTimeout(() => {
+      slotR.classList.remove("out-fwd", "out-back");
+      done();
+      void slotR.offsetWidth;
+      slotR.classList.add(forward ? "in-fwd" : "in-back");
+    }, 260);
+  }
+
+  const step = dir => {
+    if (isSpread()) {
+      const [l, r] = spreadOf(R.page);
+      go(dir > 0 ? r + 1 : (l == null ? 0 : l - 1));
+    } else {
+      go(R.page + dir);
+    }
+  };
+
+  function openReader(id, page) {
+    const b = books.find(x => x.id === id);
+    if (!b) return;
+    R.book = b;
+    R.page = Math.max(0, Math.min(b.scans - 1, page != null ? page : +store.get(`page:${id}`) || 0));
+    R.zoom = false;
+    reader.classList.remove("zoomed");
+    R.lastFocus = document.activeElement;
+    reader.classList.add("open");
+    reader.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    paint();
+    history.replaceState(null, "", `#read/${id}/${R.page + 1}`);
+    $("#readerClose").focus();
+  }
+
+  function closeReader() {
+    if (!reader.classList.contains("open")) return;
+    reader.classList.remove("open");
+    reader.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    history.replaceState(null, "", "#library");
+    renderShelf();
+    observeReveals();
+    if (R.lastFocus) R.lastFocus.focus();
+  }
+
+  $("#readerPrev").addEventListener("click", () => step(-1));
+  $("#readerNext").addEventListener("click", () => step(1));
+  $("#readerClose").addEventListener("click", closeReader);
+  range.addEventListener("input", () => go(+range.value, false));
+  $("#readerZoom").addEventListener("click", () => {
+    R.zoom = !R.zoom;
+    reader.classList.toggle("zoomed", R.zoom);
+    stage.scrollTop = 0;
+    paint();
+  });
+  $("#readerFull").addEventListener("click", () => {
+    if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    else if (reader.requestFullscreen) reader.requestFullscreen().catch(() => {});
+  });
+
+  // Click the left or right half of a page to turn back or forward.
+  stage.addEventListener("click", e => {
+    if (R.zoom || e.target.closest("button")) return;
+    const r = stage.getBoundingClientRect();
+    step(e.clientX - r.left < r.width / 2 ? -1 : 1);
+  });
+
+  document.addEventListener("keydown", e => {
+    if (!reader.classList.contains("open")) return;
+    if (e.key === "ArrowRight" || e.key === "PageDown") { e.preventDefault(); step(1); }
+    else if (e.key === "ArrowLeft" || e.key === "PageUp") { e.preventDefault(); step(-1); }
+    else if (e.key === "Home") go(0, false);
+    else if (e.key === "End") go(R.book.scans - 1, false);
+    else if (e.key === "Escape" && !document.fullscreenElement) closeReader();
+  });
+
+  // Swipe on touch screens.
+  let sx = null, sy = null;
+  stage.addEventListener("touchstart", e => { if (e.touches.length === 1) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; } }, { passive: true });
+  stage.addEventListener("touchend", e => {
+    if (sx == null || R.zoom) return;
+    const dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+    sx = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.3) step(dx < 0 ? 1 : -1);
+  }, { passive: true });
+
+  let lastTwo = null;
+  addEventListener("resize", () => {
+    if (!reader.classList.contains("open")) return;
+    if (isSpread() !== lastTwo) { lastTwo = isSpread(); paint(); }
+  });
+
+  // Deep links: #read/<book>/<page>
+  function routeFromHash() {
+    const m = location.hash.match(/^#read\/([a-z]+)(?:\/(\d+))?/);
+    if (m) openReader(m[1], m[2] ? +m[2] - 1 : undefined);
+  }
+  addEventListener("hashchange", routeFromHash);
 
   /* ------------------------------------------------------------------
    * Quotes carousel
@@ -708,6 +938,7 @@
   applyLang();
   onScroll();
   heroCanvas();
+  routeFromHash();
 
   const ready = () => setTimeout(() => document.body.classList.add("loaded"), reduceMotion ? 0 : 500);
   if (document.fonts && document.fonts.ready) {

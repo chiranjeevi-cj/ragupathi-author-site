@@ -33,9 +33,9 @@
     <nav class="nav-links" aria-label="Main">
       <a href="#about" data-i18n="nav.about"></a>
       <a href="#books" data-i18n="nav.books"></a>
+      <a href="#library" data-i18n="nav.library"></a>
       <a href="#words" data-i18n="nav.words"></a>
       <a href="#journey" data-i18n="nav.journey"></a>
-      <a href="#contact" data-i18n="nav.contact"></a>
     </nav>
     <div class="nav-actions">
       <div class="lang-toggle" role="group" aria-label="Language">
@@ -60,7 +60,7 @@
           </h1>
           <p class="hero-lead reveal" data-i18n="hero.lead"></p>
           <div class="hero-cta reveal">
-            <a class="btn btn-primary magnetic" href="#books"><span data-i18n="hero.cta1"></span></a>
+            <a class="btn btn-primary magnetic" href="#library"><span data-i18n="hero.cta1"></span></a>
             <a class="btn btn-ghost magnetic" href="#about"><span data-i18n="hero.cta2"></span></a>
           </div>
         </div>
@@ -160,6 +160,16 @@
       </div>
     </section>
 
+    <!-- LIBRARY -->
+    <section id="library" class="section library">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="library.eyebrow"></p>
+        <h2 class="section-title reveal" data-i18n="library.title"></h2>
+        <p class="section-sub reveal" data-i18n="library.sub"></p>
+        <div class="shelf" id="shelf"></div>
+      </div>
+    </section>
+
     <!-- WORDS / EXCERPTS -->
     <section id="words" class="section words">
       <div class="container">
@@ -208,36 +218,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
-      <div class="container contact-inner">
-        <div>
-          <p class="eyebrow reveal" data-i18n="contact.eyebrow"></p>
-          <h2 class="section-title reveal" data-i18n="contact.title"></h2>
-          <p class="reveal" data-i18n="contact.p"></p>
-        </div>
-        <div class="publishers">
-          <div class="pub-card reveal">
-            <h3 data-i18n="pub.kavi.n"></h3>
-            <p data-i18n="pub.kavi.a"></p>
-            <a href="tel:+917904730223">+91 79047 30223</a>
-            <small data-i18n="pub.kavi.b"></small>
-          </div>
-          <div class="pub-card reveal">
-            <h3 data-i18n="pub.surabi.n"></h3>
-            <p data-i18n="pub.surabi.a"></p>
-            <a href="tel:+917904033924">+91 79040 33924</a>
-            <a href="mailto:thamizhsurabi@gmail.com">thamizhsurabi@gmail.com</a>
-            <small data-i18n="pub.surabi.b"></small>
-          </div>
-          <div class="pub-card reveal">
-            <h3 data-i18n="pub.nellai.n"></h3>
-            <p data-i18n="pub.nellai.a"></p>
-            <small data-i18n="pub.nellai.b"></small>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
@@ -260,7 +240,40 @@
         <p id="modalDesc"></p>
         <blockquote id="modalExcerpt"></blockquote>
         <dl id="modalMeta"></dl>
+        <button class="btn btn-primary modal-read" type="button" id="modalRead"><span data-i18n="read.now"></span></button>
       </div>
+    </div>
+  </div>
+
+  <!-- Book reader -->
+  <div class="reader" id="reader" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Book reader">
+    <div class="reader-top">
+      <div class="reader-title">
+        <strong id="readerTitle"></strong>
+        <span id="readerCount"></span>
+      </div>
+      <div class="reader-tools">
+        <button type="button" class="r-btn" id="readerZoom" aria-label="Zoom" title="Zoom">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+        </button>
+        <button type="button" class="r-btn" id="readerFull" aria-label="Full screen" title="Full screen">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+        </button>
+        <button type="button" class="r-btn" id="readerClose" aria-label="Close" title="Close">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="reader-stage" id="readerStage">
+      <div class="spread" id="spread">
+        <div class="leaf-slot left" id="slotL"><img alt="" /></div>
+        <div class="leaf-slot right" id="slotR"><img alt="" /></div>
+      </div>
+    </div>
+    <button type="button" class="r-nav prev" id="readerPrev" aria-label="Previous page">‹</button>
+    <button type="button" class="r-nav next" id="readerNext" aria-label="Next page">›</button>
+    <div class="reader-bottom">
+      <input type="range" id="readerRange" min="0" value="0" aria-label="Page" />
     </div>
   </div>
 
