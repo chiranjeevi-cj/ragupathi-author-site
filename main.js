@@ -383,6 +383,22 @@
     });
   }
 
+  // Shrink the hero name if a single long word (e.g. வடதின்னலூர்) would overflow a narrow screen.
+  function fitHeroTitle() {
+    const h1 = $(".hero-title");
+    if (!h1) return;
+    h1.style.fontSize = "";
+    const avail = h1.clientWidth;
+    let widest = 0;
+    $$(".split", h1).forEach(el => { widest = Math.max(widest, el.getBoundingClientRect().width); });
+    if (widest > avail && avail > 0) {
+      const base = parseFloat(getComputedStyle(h1).fontSize);
+      h1.style.fontSize = `${Math.floor(base * (avail / widest) * 0.97)}px`;
+    }
+  }
+  addEventListener("resize", fitHeroTitle);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitHeroTitle);
+
   function applyLang() {
     const dict = t[lang];
     document.documentElement.lang = lang;
@@ -392,6 +408,7 @@
       if (v != null) el.textContent = v;
     });
     $$(".split").forEach(splitChars);
+    fitHeroTitle();
     $$("[data-set-lang]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.setLang === lang)));
     positionPill();
     renderBooks();
