@@ -17,6 +17,13 @@
       "library.eyebrow": "The reading room",
       "library.title": "Read the books, right here",
       "library.sub": "Every page of all three books, free to read online. Open a book, turn the pages, and come back any time: your place is remembered.",
+      "nav.videos": "Videos",
+      "videos.eyebrow": "Watch",
+      "videos.title": "Hear him speak",
+      "videos.sub": "Talks and readings from his YouTube channel.",
+      "videos.play": "Play video",
+      "videos.yt": "Watch on YouTube",
+      "videos.n": "Video",
       "read.now": "Read now",
       "read.article": "Read article",
       "library.articles.sub": "His writing also appears in magazines. Tap to read the full article.",
@@ -120,6 +127,13 @@
       "library.eyebrow": "வாசிப்பு அறை",
       "library.title": "நூல்களை இங்கேயே வாசியுங்கள்",
       "library.sub": "மூன்று நூல்களின் அனைத்துப் பக்கங்களையும் இலவசமாக இணையத்தில் வாசிக்கலாம். நூலைத் திறந்து பக்கங்களைப் புரட்டுங்கள்; நீங்கள் விட்ட இடம் நினைவில் இருக்கும்.",
+      "nav.videos": "காணொளிகள்",
+      "videos.eyebrow": "காண்க",
+      "videos.title": "அவரது குரலில்",
+      "videos.sub": "அவரது யூடியூப் பக்கத்திலிருந்து உரைகளும் வாசிப்புகளும்.",
+      "videos.play": "காணொளியை இயக்க",
+      "videos.yt": "யூடியூபில் காண",
+      "videos.n": "காணொளி",
       "read.now": "இப்போது வாசிக்க",
       "read.article": "கட்டுரையை வாசிக்க",
       "library.articles.sub": "இதழ்களிலும் இவரது எழுத்துகள் வெளியாகியுள்ளன. முழுக் கட்டுரையை வாசிக்கத் தொடவும்.",
@@ -413,6 +427,7 @@
     positionPill();
     renderBooks();
     renderShelf();
+    renderVideos();
     renderQuotes();
     if (reader.classList.contains("open")) updateReaderUI();
     observeReveals();
@@ -774,6 +789,46 @@
     if (m) openReader(m[1], m[2] ? +m[2] - 1 : undefined);
   }
   addEventListener("hashchange", routeFromHash);
+
+  /* ------------------------------------------------------------------
+   * Videos: a light thumbnail first, the YouTube player only on click
+   * ---------------------------------------------------------------- */
+  const videos = ["ATvcNsQYjsY", "6cRXY5IHgF0"];
+  const videoTitles = {};
+  videos.forEach(id => {
+    fetch(`https://noembed.com/embed?url=https://www.youtube.com/watch?v=${id}`)
+      .then(r => r.json())
+      .then(j => {
+        if (!j || !j.title) return;
+        videoTitles[id] = j.title;
+        const el = document.querySelector(`.video-card[data-id="${id}"] h3`);
+        if (el) el.textContent = j.title;
+      })
+      .catch(() => {});
+  });
+
+  function renderVideos() {
+    const grid = $("#videoGrid");
+    if (!grid) return;
+    const d = t[lang];
+    grid.innerHTML = videos.map((id, i) => `
+      <article class="video-card reveal" data-id="${id}">
+        <div class="video-frame">
+          <button class="video-poster" type="button" aria-label="${d["videos.play"]}">
+            <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy" />
+            <span class="video-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+          </button>
+        </div>
+        <div class="video-meta">
+          <h3>${videoTitles[id] || `${d["videos.n"]} ${i + 1}`}</h3>
+          <a href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">${d["videos.yt"]} ↗</a>
+        </div>
+      </article>`).join("");
+    $$(".video-poster", grid).forEach(btn => btn.addEventListener("click", () => {
+      const id = btn.closest(".video-card").dataset.id;
+      btn.parentElement.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    }));
+  }
 
   /* ------------------------------------------------------------------
    * Quotes carousel
