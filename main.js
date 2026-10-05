@@ -18,6 +18,9 @@
       "library.title": "Read the books, right here",
       "library.sub": "Every page of all three books, free to read online. Open a book, turn the pages, and come back any time: your place is remembered.",
       "read.now": "Read now",
+      "read.article": "Read article",
+      "library.articles.sub": "His writing also appears in magazines. Tap to read the full article.",
+      "library.articles": "Articles",
       "read.continue": "Continue reading",
       "read.pages": "pages",
       "read.page": "Page",
@@ -80,6 +83,8 @@
       "journey.1.y": "10+ yrs",
       "journey.1.t": "Teaching in government schools",
       "journey.1.d": "Guiding students as a graduate teacher of history, with a lifelong love of reading and writing.",
+      "journey.a.t": "Published in Natchathirangal",
+      "journey.a.d": "His article urging parents to stand with teachers appears in the June 2022 issue.",
       "journey.2.t": "Naanum Pesuven",
       "journey.2.d": "His first book: essays drawn from experience, with ideas today's students need.",
       "journey.3.t": "Uyir Perum Pookkal",
@@ -116,6 +121,9 @@
       "library.title": "நூல்களை இங்கேயே வாசியுங்கள்",
       "library.sub": "மூன்று நூல்களின் அனைத்துப் பக்கங்களையும் இலவசமாக இணையத்தில் வாசிக்கலாம். நூலைத் திறந்து பக்கங்களைப் புரட்டுங்கள்; நீங்கள் விட்ட இடம் நினைவில் இருக்கும்.",
       "read.now": "இப்போது வாசிக்க",
+      "read.article": "கட்டுரையை வாசிக்க",
+      "library.articles.sub": "இதழ்களிலும் இவரது எழுத்துகள் வெளியாகியுள்ளன. முழுக் கட்டுரையை வாசிக்கத் தொடவும்.",
+      "library.articles": "கட்டுரைகள்",
       "read.continue": "தொடர்ந்து வாசிக்க",
       "read.pages": "பக்கங்கள்",
       "read.page": "பக்கம்",
@@ -178,6 +186,8 @@
       "journey.1.y": "10+ ஆண்டுகள்",
       "journey.1.t": "அரசுப் பள்ளி ஆசிரியப் பணி",
       "journey.1.d": "வரலாற்றுப் பட்டதாரி ஆசிரியராக மாணவர்களுக்கு வழிகாட்டுதல்; வாசிப்பிலும் எழுத்திலும் நீங்காத ஆர்வம்.",
+      "journey.a.t": "நட்சத்திரங்கள் இதழில் கட்டுரை",
+      "journey.a.d": "ஆசிரியர்களுக்குப் பக்கபலமாகப் பெற்றோர் திகழ வேண்டும் என்ற கட்டுரை ஜூன் 2022 இதழில் வெளியானது.",
       "journey.2.t": "நானும் பேசுவேன்",
       "journey.2.d": "முதல் நூல்: இன்றைய மாணவர்களுக்குத் தேவையான கருத்துக்கள் கொண்ட அனுபவக் கட்டுரைகள்.",
       "journey.3.t": "உயிர் பெறும் பூக்கள்",
@@ -285,6 +295,27 @@
         tags: ["தன்னம்பிக்கை", "கல்லூரி மாணவர்கள்", "புதியது"],
         publisher: "தமிழ்ச்சுரபி பதிப்பகம், சென்னை",
         desc: "கிராமங்களிலிருந்து கல்லூரிக்கு வரக்கூடிய தம்பி, தங்கைகளுக்காக எழுதப்பட்ட நூல். பெற்றோரின் உழைப்பின் மதிப்பையும், கிடைக்கும் வாய்ப்புகளைத் தவறவிடாமல் பயன்படுத்துவதையும், கல்வி எவ்வாறு இருளை வெளிச்சமாக்கும் என்பதையும் அன்புடன் எடுத்துரைக்கிறது."
+      }
+    }
+  ];
+
+  const articles = [
+    {
+      id: "article-2022",
+      scans: 1,
+      title: "ஆசிரியர்களுக்கு பக்கபலமாக பெற்றோர்கள் திகழ வேண்டும்",
+      cover: "assets/img/article-2022.jpg",
+      en: {
+        title: "Parents Must Stand as a Pillar of Support for Teachers",
+        kicker: "To help the next generation stand tall",
+        source: "Natchathirangal magazine · June 2022 · page 8",
+        desc: "A heartfelt appeal to parents to work hand in hand with teachers. He writes that schooling alone cannot shape a child: parents and teachers must walk together, guide students away from distractions, and encourage them to read and grow into people who serve society."
+      },
+      ta: {
+        title: "ஆசிரியர்களுக்கு பக்கபலமாக பெற்றோர்கள் திகழ வேண்டும்",
+        kicker: "அடுத்த தலைமுறையை தலைநிமிரச் செய்ய",
+        source: "நட்சத்திரங்கள் இதழ் · ஜூன் 2022 · பக்கம் 8",
+        desc: "பெற்றோரும் ஆசிரியர்களும் இணைந்து மாணவ சமுதாயத்தை நல்வழியில் பயணிக்கச் செய்ய வேண்டும் என்று அழைக்கும் கட்டுரை. கவனச் சிதறல்களிலிருந்து மாணவர்களை மீட்டு, வாசிப்பை ஊக்குவித்து, அடுத்த தலைமுறையைத் தலைநிமிரச் செய்யப் பெற்றோரின் பங்கை வலியுறுத்துகிறது."
       }
     }
   ];
@@ -515,10 +546,27 @@
     }).join("");
     $$(".shelf-cover", shelf).forEach(btn =>
       btn.addEventListener("click", () => openReader(btn.closest(".shelf-item").dataset.id)));
+
+    const list = $("#articleList");
+    list.innerHTML = articles.map(a => `
+      <article class="article-card reveal">
+        <button class="article-thumb" type="button" data-id="${a.id}" aria-label="${d["read.article"]}: ${a[lang].title}">
+          <img src="${a.cover}" alt="" loading="lazy" />
+        </button>
+        <div class="article-body">
+          <p class="article-src">${a[lang].source}</p>
+          <p class="article-kicker">${a[lang].kicker}</p>
+          <h4>${a.title}</h4>
+          ${lang === "en" ? `<p class="article-tr">${a.en.title}</p>` : ""}
+          <p>${a[lang].desc}</p>
+          <button class="btn btn-primary" type="button" data-id="${a.id}">${d["read.article"]}</button>
+        </div>
+      </article>`).join("");
+    $$("[data-id]", list).forEach(btn => btn.addEventListener("click", () => openReader(btn.dataset.id)));
   }
 
   const R = { book: null, page: 0, busy: false, zoom: false, lastFocus: null };
-  const isSpread = () => innerWidth >= 900 && !R.zoom;
+  const isSpread = () => innerWidth >= 900 && !R.zoom && R.book && R.book.scans > 2;
 
   // In spread mode the cover sits alone on the right; after that pages pair up (1|2, 3|4, ...).
   const spreadOf = p => (p === 0 ? [null, 0] : p % 2 ? [p, p + 1] : [p - 1, p]);
@@ -565,6 +613,7 @@
       if (l != null && r < R.book.scans) label = `${l + 1}–${r + 1}`;
     }
     $("#readerCount").textContent = `${d["read.page"]} ${label} ${d["read.of"]} ${R.book.scans}`;
+    reader.classList.toggle("single-doc", R.book.scans === 1);
     range.max = R.book.scans - 1;
     range.value = R.page;
     $("#readerPrev").disabled = R.page === 0;
@@ -628,7 +677,7 @@
   };
 
   function openReader(id, page) {
-    const b = books.find(x => x.id === id);
+    const b = books.find(x => x.id === id) || articles.find(x => x.id === id);
     if (!b) return;
     R.book = b;
     R.page = Math.max(0, Math.min(b.scans - 1, page != null ? page : +store.get(`page:${id}`) || 0));
@@ -704,7 +753,7 @@
 
   // Deep links: #read/<book>/<page>
   function routeFromHash() {
-    const m = location.hash.match(/^#read\/([a-z]+)(?:\/(\d+))?/);
+    const m = location.hash.match(/^#read\/([a-z0-9-]+)(?:\/(\d+))?/);
     if (m) openReader(m[1], m[2] ? +m[2] - 1 : undefined);
   }
   addEventListener("hashchange", routeFromHash);
